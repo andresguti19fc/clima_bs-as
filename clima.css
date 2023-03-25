@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .location {
+    text-align: center;
+  }
+  
+  .city {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+  }
+  
+  .weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .temperature {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+/* Styles for rainy weather */
+.rainy {
+    background-color: #5d5d5d;
+  }
+  
+  /* Animation for rainy weather */
+  .rainy .weather-icon {
+    animation: rain 0.5s linear infinite;
+  }
+  
+  @keyframes rain {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
